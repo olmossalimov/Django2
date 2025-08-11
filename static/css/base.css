@@ -1,0 +1,6 @@
+button {
+    border: 2px solid red
+}
+button:hover  {
+    background-color: lime;
+}

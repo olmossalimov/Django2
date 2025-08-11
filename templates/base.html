@@ -1,0 +1,25 @@
+{% load static %}
+<html>
+<head>
+    <title>Yangiliklar</title>
+    <link href="{% static 'css/base.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <navbar>
+        <div style="border: 4px solid red; width:100%px;height: 120px">
+            <ul style="display: block;">
+                <li>O'zbekiston</li>
+                <li>Jahon</li>
+                <li>Iqtisodiyot</li>
+                <li>Jamiyat</li>
+                <li><a href="{% url 'news' %}">Yangiliklar</a></li>
+            </ul>
+
+        </div>
+    </navbar>
+    {% block content %}
+    {% endblock content %}
+</body>
+
+</html>
